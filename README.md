@@ -25,6 +25,8 @@ El laboratorio tiene como finalidad:
 
 ## 4. Topología del laboratorio
 
+<img width="886" height="514" alt="image" src="https://github.com/user-attachments/assets/27f8db97-00b0-4d3e-868a-dc4ebfc5d2f8" />
+
 ### 4.1 Componentes
 - **Host víctima (Target/Cliente):** Genera consultas DNS.
 - **Gateway:** Router de salida de VLAN.
@@ -62,17 +64,9 @@ El laboratorio tiene como finalidad:
 ## 7. Evidencias requeridas
 Se deben incluir capturas de pantalla con datos redactados:
 
-- Tabla ARP antes y después (host víctima y gateway).
-- Tráfico DNS (consulta y respuesta) en Wireshark.
-- Alertas y logs de mitigación (DAI/DHCP snooping) o IDS (Suricata/Snort).
-- Validación de resolución DNS (dig/nslookup) mostrando comportamiento correcto tras mitigación.
+<img width="886" height="578" alt="image" src="https://github.com/user-attachments/assets/70fe67d0-08e1-4443-9f64-7a8804f404b0" />
 
-Estructura de archivos sugerida:
-
-- `docs/screenshots/01_arp_table_before.png`
-- `docs/screenshots/02_arp_table_after.png`
-- `docs/screenshots/03_dns_query_response.png`
-- `docs/screenshots/04_mitigation_logs.png`
+<img width="886" height="626" alt="image" src="https://github.com/user-attachments/assets/e5a1a07f-2d2c-4bfe-b471-cc40fecc64e2" />
 
 ## 8. Indicadores de compromiso (IoC)
 
