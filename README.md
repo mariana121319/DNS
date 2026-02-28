@@ -1,19 +1,24 @@
-# Topología de red
+# Laboratorio MitM: ARP Spoofing y DNS Spoofing
 
-## VLAN
-VLAN 10
+## Introducción
+Este laboratorio tiene como objetivo demostrar la vulnerabilidad en las redes a través de ataques de Man-in-the-Middle (MitM) utilizando ARP Spoofing y DNS Spoofing. Estos ataques permiten a un atacante interceptar y manipular la comunicación entre dos o más individuos sin que estos lo sepan.
 
-## NIC
-NIC eth1
+## Requisitos
+- Una red local accesible para realizar los ataques.
+- Herramientas necesarias: `arpspoof`, `dnsspoof`, o cualquier otro software de tu elección que permita realizar estos tipos de ataques.
 
-## Cliente
-Cliente 12.0.10.20/24
+## Pasos del Laboratorio
+1. **Configuración de la Red**: Establece una red local y conecta al menos dos dispositivos.
+2. **ARP Spoofing**:
+   - Utiliza `arpspoof` para engañar a la víctima y redirigir el tráfico hacia tu máquina.
+   - Captura el tráfico utilizando herramientas como Wireshark para analizar los paquetes que pasan por la red.
+3. **DNS Spoofing**:
+   - Configura un servidor DNS que responda con direcciones IP manipuladas.
+   - Demuestra cómo los ataques DNS pueden redirigir a los usuarios a sitios web maliciosos.
 
-## Gateway
-Gateway 12.0.10.1/24
+## Consideraciones de Seguridad
+- Realiza estas pruebas solo en entornos controlados,
+- Asegúrate de tener permiso para realizar estas pruebas y no las apliques en redes ajenas para evitar problemas legales.
 
-## Nodo de pruebas
-Nodo de pruebas 12.0.10.10/24
-
-## DNS Resolver
-DNS Resolver: N/A
+## Conclusiones
+Al finalizar este laboratorio, serás capaz de entender las implicaciones de seguridad de los ataques de MitM y cómo se llevan a cabo. Es este tipo de conocimiento que puede ayudar a fortalecer la seguridad de las redes personales y corporativas.
